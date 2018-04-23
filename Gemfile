@@ -9,6 +9,9 @@ gem 'devise', '~> 3.5'
 gem 'milia','1.2.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

@@ -5,9 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.20.0'
-gem 'devise', '~> 3.5'
+gem 'devise', '~> 3.5.6'
 gem 'milia','1.2.1'
 gem 'aws-sdk'
+gem 'stripe'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'twitter-bootstrap-rails'

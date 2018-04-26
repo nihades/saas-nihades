@@ -619,6 +619,7 @@ GEM
     coffee-script-source (1.12.2)
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
+    connection_pool (2.2.1)
     crass (1.0.4)
     debug_inspector (0.0.3)
     devise (3.5.10)
@@ -674,6 +675,8 @@ GEM
     orm_adapter (0.5.0)
     pg (0.20.0)
     rack (1.6.9)
+    rack-protection (1.5.5)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.5)
@@ -712,6 +715,7 @@ GEM
     rdoc (4.3.0)
     recaptcha (4.8.0)
       json
+    redis (4.0.1)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -729,6 +733,15 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    sidekiq (5.1.3)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (>= 3.3.5, < 5)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
     spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -780,6 +793,8 @@ DEPENDENCIES
   recaptcha
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  sidekiq
+  sinatra (= 1.4.8)
   spring
   stripe
   twitter-bootstrap-rails

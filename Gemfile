@@ -9,6 +9,9 @@ gem 'devise', '~> 3.5.6'
 gem 'milia','1.2.1'
 gem 'aws-sdk'
 gem 'stripe'
+gem 'sidekiq'
+gem 'sinatra', '1.4.8'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'twitter-bootstrap-rails'

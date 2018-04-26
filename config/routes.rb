@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-
+  
+  require 'sidekiq/web'
+  mount Sidekiq::Web => "/sidekiq"
+  
+  
+  
   resources :user_projects
   resources :artifacts
   resources :tenants do
